@@ -2,9 +2,14 @@
 <html lang="en">
     <head>
 
-        <title>Home Page </title>
+        <title>Nico Sun Full-Stack Developer </title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+        <script rel="javascript" src="./js/jquery-3.6.4.min.js"></script>
+        <script rel="javascript" src="./js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="./css/style.css">
 
     </head>
 
@@ -16,43 +21,103 @@
             </div>
 
             <nav>
+                <i>Darkmode</i>
                 <a href="#about">About Me</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
             </nav>
-            
+
         </header>
 
         <main>
-            <h2 id="about">About Me</h2>
-            <p>
-                Retired scientist, now doing webdevelopment
-            </p>
+            <div class="container-fluid">
+                <section>
+                    <div class="row justify-content-center text-center">
+                        <h2 id="about">About Me</h2>
+                        <p>
+                            Retired scientist, now doing webdevelopment
+                        </p>
+                        <a>LinkedIn</a>
+                    </div>
+                </section>
+                <section>
+                    <div class="row justify-content-center text-center">
+                        <!-- <h2 id="projects">Projects</h2> -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4>Main Projects</h4>
+                                <ul>
+                                    <li class="projectItem" id="Cryo"><a href="http://cryospherecomputing.com" target="blank">Cryosphere Computing</a></li>
+                                    <li class="projectItem" id="CryoShop"><a href="http://shop.cryospherecomputing.com">Cryosphere Computing Shop</a></li>
+                                    <li class="projectItem" id="Prussian"><a href="prussianheathen.com">Prussianheathen</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Details</h4>
+                                <p id="details">(hover over a project)</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Minor Projects</h4>
+                                <ul>
+                                    <li class="projectItem" id="Flask">Guest comments</li>
+                                    <li class="projectItem" id="AI_ART"><a href="./ai-art.html">AI art</a></li>
+                                </ul>
 
-            <h2 id="projects">Projects</h2>
-            <ul>
-                <li><a href="http://cryospherecomputing.com" target="blank">CryosphereComputing</a></li>
-                <li></li>
-                <li></li>
-            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <h2 id="skills">Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Git</li>
-                <li>Github</li>
-                <li>JS</li>
-                <li>JQuery</li>
-                <li>Bootstrap</li>
-            </ul>
-
-
+                <section>
+                    <div class="row justify-content-center text-center">
+                        <h2 id="skills">Skills</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4>Frontend</h4>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>JQuery</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Backend</h4>
+                                <ul>
+                                    <li>React-Redux</li>
+                                    <li>NodeJS / express</li>
+                                    <li>PostgreSQL</li>
+                                    <li>CRUD / REST APIs</li>
+                                    <br>
+                                    <li>Python</li>
+                                    <li>Django</li>
+                                    <li>Flask</li>
+                                    <br>
+                                    <li>Web Security</li>
+                                    <li>Monitoring</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4>Software Management</h4>
+                                <ul>
+                                    <li>Git</li>
+                                    <li>Github</li>
+                                    <li>Docker</li>
+                                    <li>Swagger</li>
+                                    <li>DBML</li>
+                                </ul>
+                              </div>
+                            </div>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <footer>
-            
+
         </footer>
 
     </body>
+    <script rel="javascript" src="./js/script.js"></script>
 </html>

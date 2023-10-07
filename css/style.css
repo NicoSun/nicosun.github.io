@@ -2,6 +2,16 @@
     display: inline-block;
 }
 
+header{
+    background-color: black;
+    height: 2em;
+}
+
+header a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
 body {
     background-color: rgb(19, 7, 71);
     color:antiquewhite;
@@ -9,6 +19,15 @@ body {
 
 nav{
     float: right;
+}
+
+
+section {
+    margin-top: 50px;
+}
+
+li {
+    margin-top: 0.5em;
 }
 
 
