@@ -1,1 +1,2 @@
-# new prohect
+# new project
+A simple portfolio website
