@@ -1,0 +1,71 @@
+#pagename{
+    display: inline-block;
+}
+
+header{
+    background-color: black;
+    height: 2em;
+}
+
+header a, span {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(19, 7, 71);
+    color:antiquewhite;
+}
+
+nav{
+    float: right;
+}
+
+
+section {
+    margin-top: 50px;
+}
+
+li {
+    margin-top: 0.5em;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 1.25em;
+}
+
+.projectItem li {
+    background-color: rgb(141, 164, 241);
+    border-radius: 1em;
+}
+
+.light-mode {
+    background-color: rgb(250, 250, 250);
+    color: black;
+  }
+
+#profilepic {
+    max-width: 150px;
+    border-radius: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
