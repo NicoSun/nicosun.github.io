@@ -11,6 +11,12 @@
 
         <link rel="stylesheet" href="./css/style.css">
 
+        <script>
+            $(document).ready( function() {
+              checkAppearance();
+            });
+          </script>
+
     </head>
 
     <body>
@@ -21,7 +27,7 @@
             </div>
 
             <nav>
-                <i>Darkmode</i>
+                <span id="dark" onclick="darkmode()">Light</span>
                 <a href="#about">About Me</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
@@ -33,23 +39,33 @@
             <div class="container-fluid">
                 <section>
                     <div class="row justify-content-center text-center">
-                        <h2 id="about">About Me</h2>
-                        <p>
-                            Retired scientist, now doing webdevelopment
-                        </p>
-                        <a>LinkedIn</a>
+                        <div class="col-md-3">
+                            <h2 id="about">About Me</h2>
+                            <img id="profilepic" src="images/profile.jpeg">
+                            <br>
+                            <a href="https://www.linkedin.com/in/nico-sun-050890123/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                              </svg></a>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                Hi, I'm Nico Sun, a newly trained Full-Stack Developer with an existing background in Python for scientific research.
+                                Below you can find some of my Projects and the skills needed to develop them.
+                            </p>
+                        </div> 
                     </div>
                 </section>
                 <section>
                     <div class="row justify-content-center text-center">
                         <!-- <h2 id="projects">Projects</h2> -->
-                        <div class="row">
+                        <div class="row projectItem">
                             <div class="col-md-3">
                                 <h4>Main Projects</h4>
                                 <ul>
-                                    <li class="projectItem" id="Cryo"><a href="http://cryospherecomputing.com" target="blank">Cryosphere Computing</a></li>
-                                    <li class="projectItem" id="CryoShop"><a href="http://shop.cryospherecomputing.com">Cryosphere Computing Shop</a></li>
-                                    <li class="projectItem" id="Prussian"><a href="prussianheathen.com">Prussianheathen</a></li>
+                                    <li id="Cryo"><a href="http://cryospherecomputing.com" target="blank">Cryosphere Computing</a></li>
+                                    <li id="CryoShop"><a href="http://shop.cryospherecomputing.com">Cryosphere Computing Shop</a></li>
+                                    <li id="Prussian"><a href="prussianheathen.com">Prussianheathen</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
@@ -59,8 +75,8 @@
                             <div class="col-md-3">
                                 <h4>Minor Projects</h4>
                                 <ul>
-                                    <li class="projectItem" id="Flask">Guest comments</li>
-                                    <li class="projectItem" id="AI_ART"><a href="./ai-art.html">AI art</a></li>
+                                    <li id="Flask"><a href="">Guest comments</a></li>
+                                    <li id="AI_ART"><a href="./ai-art.html">AI art</a></li>
                                 </ul>
 
                             </div>
@@ -71,41 +87,42 @@
                 <section>
                     <div class="row justify-content-center text-center">
                         <h2 id="skills">Skills</h2>
-                        <div class="row">
+                        <div class="row skillitem">
                             <div class="col-md-4">
                                 <h4>Frontend</h4>
                                 <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JS</li>
-                                    <li>JQuery</li>
-                                    <li>Bootstrap</li>
+                                    <li id="html">HTML</li>
+                                    <li id="css">CSS</li>
+                                    <li id="js">JS</li>
+                                    <li id="jquery">JQuery</li>
+                                    <li id="bootstrap">Bootstrap</li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
                                 <h4>Backend</h4>
                                 <ul>
-                                    <li>React-Redux</li>
-                                    <li>NodeJS / express</li>
-                                    <li>PostgreSQL</li>
-                                    <li>CRUD / REST APIs</li>
+                                    <li id="react">React-Redux</li>
+                                    <li id="nodejs">NodeJS / express</li>
+                                    <li id="postgres">PostgreSQL</li>
+                                    <li id="crud_rest">CRUD / REST APIs</li>
                                     <br>
-                                    <li>Python</li>
-                                    <li>Django</li>
-                                    <li>Flask</li>
+                                    <li id="python">Python</li>
+                                    <li id="django">Django</li>
+                                    <li id="flask">Flask</li>
                                     <br>
-                                    <li>Web Security</li>
-                                    <li>Monitoring</li>
+                                    <li id="security">Web Security</li>
+                                    <li id="monitoring">Monitoring</li>
+                                    <li id="nginx">nginx</li>
                                 </ul>
                             </div>
                             <div class="col-md-4">
                                 <h4>Software Management</h4>
                                 <ul>
-                                    <li>Git</li>
-                                    <li>Github</li>
-                                    <li>Docker</li>
-                                    <li>Swagger</li>
-                                    <li>DBML</li>
+                                    <li id="git">Git</li>
+                                    <li id="github">Github</li>
+                                    <li id="docker">Docker</li>
+                                    <li id="swagger">Swagger</li>
+                                    <li id="dbml">DBML</li>
                                 </ul>
                               </div>
                             </div>
@@ -120,4 +137,5 @@
 
     </body>
     <script rel="javascript" src="./js/script.js"></script>
+
 </html>
