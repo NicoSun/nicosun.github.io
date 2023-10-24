@@ -29,6 +29,12 @@ $("#AI_ART").mouseenter( () => {
     skillHighlight(skilllist);
 });
 
+$("#PHP_API").mouseenter( () => {
+    $("#details").text("A demo to access the geonames API with an apache/PHP webserver.");
+    const skilllist = ["html","css","js","jquery","php","apache","git","github"];
+    skillHighlight(skilllist);
+});
+
 $(".projectItem li").mouseleave( () => {
     $("#details").text("(hover over a project)");
     const key1 = localStorage.getItem("apperance");
