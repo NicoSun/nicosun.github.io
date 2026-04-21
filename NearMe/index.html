@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>GeoLocator</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+  <style>
+    #map { height: 900px; width: 100%; }
+  </style>
+</head>
+<body ng-controller="CityController">
+  <h3>AngularJS + Leaflet</h3>
+  <select ng-model="selectedCity" ng-options="city as city.name for city in cities" default="{{selectedCity}}"></select>
+  <button ng-click="loadPlaces()">Load Places</button>
+
+  <div id="map"></div>
+
+</body>
+</html>

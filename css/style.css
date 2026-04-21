@@ -50,12 +50,19 @@ li a {
     color: black;
   }
 
+
+.skill_class {
+    margin-bottom: 0.8em;
+}
+
 #profilepic {
     max-width: 150px;
     border-radius: 75px;
 }
 
-
+#skills {
+    margin-bottom: 1em;
+}
 
 
 
